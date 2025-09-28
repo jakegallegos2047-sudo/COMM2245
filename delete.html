@@ -5,15 +5,29 @@
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <h1>Delete an entry</h1>
-  <img src="images/Ken_Block.jpg">
-  <p>This page would let you remove a submitted entry.</p>
+  <div class="container">
+    <div class="sidebar">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About the Author</a>
+        <a href="create.html">Create</a>
+        <a href="retrieve.html">Retrieve</a>
+        <a href="update.html">Update</a>
+        <a href="delete.html">Delete</a>
+      </nav>
+    </div>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="create.html">Create</a>
-    <a href="retrieve.html">Retrieve</a>
-    <a href="update.html">Update</a>
-  </nav>
+    <div class="main-content">
+      <h1>Delete an Entry</h1>
+      <img src="images/Ken_Block.jpg" alt="Ken Block" width="892" height="502">
+      <p>Select an entry to delete below.</p>
+
+      <form class="entry-form">
+        <label for="entry-id">Entry to Delete:</label>
+        <input type="text" id="entry-id" name="entry-id">
+        <button type="submit">Delete</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>

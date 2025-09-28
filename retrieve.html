@@ -5,15 +5,29 @@
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <h1>Retrieve Entry</h1>
-  <img src="images/imageskb.jpg">
-  <p>This page would let you look up submitted notes and memories.</p>
+  <div class="container">
+    <div class="sidebar">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About the Author</a>
+        <a href="create.html">Create</a>
+        <a href="retrieve.html">Retrieve</a>
+        <a href="update.html">Update</a>
+        <a href="delete.html">Delete</a>
+      </nav>
+    </div>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="create.html">Create</a>
-    <a href="update.html">Update</a>
-    <a href="delete.html">Delete</a>
-  </nav>
+    <div class="main-content">
+      <h1>Retrieve Entry</h1>
+      <img src="images/imageskb.jpg" alt="Ken Block" width="892" height="502">
+      <p>Search for a previously submitted memory below.</p>
+
+      <form class="entry-form">
+        <label for="entry-id">Entry to Retrieve:</label>
+        <input type="text" id="entry-id" name="entry-id">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>

@@ -5,15 +5,36 @@
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <h1>Update an Entry </h1>
-  <img src="images/Ken_block.webp">
-  <p>This page would let you edit a previously submitted entry.</p>
+  <div class="container">
+    <div class="sidebar">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About the Author</a>
+        <a href="create.html">Create</a>
+        <a href="retrieve.html">Retrieve</a>
+        <a href="update.html">Update</a>
+        <a href="delete.html">Delete</a>
+      </nav>
+    </div>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="create.html">Create</a>
-    <a href="retrieve.html">Retrieve</a>
-    <a href="delete.html">Delete</a>
-  </nav>
+    <div class="main-content">
+      <h1>Update an Entry</h1>
+      <img src="images/Ken_block.webp" width="892" height="502" alt="Ken Block">
+      <p>Edit your previously submitted memory below.</p>
+
+      <form class="entry-form">
+        <label for="entry-id">Entry to Update:</label>
+        <input type="text" id="entry-id" name="entry-id">
+
+        <label for="username">Your Name:</label>
+        <input type="text" id="username" name="username">
+
+        <label for="memory">Updated Memory:</label>
+        <textarea id="memory" name="memory" rows="5"></textarea>
+
+        <button type="submit">Save Updates</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
